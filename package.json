@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "predeploy": "astro build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.6",
@@ -22,5 +24,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.4.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
